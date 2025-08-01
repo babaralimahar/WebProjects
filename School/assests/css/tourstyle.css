@@ -1,0 +1,172 @@
+/* tour page */
+.container-tour{
+    
+    display: flex;
+  justify-content: center;       
+  align-items: center;      
+  flex-direction: column;      
+  width: 90%;
+  max-width: 1500px;
+  margin: 130px auto 100px auto;
+  padding: 20px;
+  background-color: rgb(102, 149, 179);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.names{
+    color:navy;
+    font-size: 32px;
+}
+video-card video {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 220px; /* adjust this value as needed */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.video-card video:hover {
+  transform: scale(1.02);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.video-card video {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.video-card:hover video {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* ✨ Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🎥 Hover effect for video */
+.video-hover:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* 🖼️ Hover effect for images */
+.img-hover:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* 🌟 General fade-in for text */
+.fade-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeTextUp 1s ease forwards;
+}
+
+@keyframes fadeTextUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🎉 Optional bounce on hover for headings */
+h2:hover {
+  animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+/* 🔥 Animation for video titles */
+.fade-title {
+  display: block;
+  background: linear-gradient(to right, #4d95b2, #467388);
+  font-weight: bold;
+  color: navajowhite;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 12px;
+  margin: 10px auto; /* ✅ center horizontally */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+
+
+/* 🎯 Uniform gallery image size */
+.img-hover {
+  height: 300px; /* Adjust height as needed */
+  width: 100%;   /* Full width inside column */
+  object-fit: cover; /* Crop to fill while keeping aspect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .img-hover {
+    height: 200px;
+  }
+}
+.video-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,216 @@
+/* about us page */
+
+    .about-section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .card {
+      text-align: justify;
+      background:#88aacb;
+      color:  #00135b;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 6px solid #00135b;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 0.7s ease forwards;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color:navajowhite;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card a {
+      color: rgb(12, 36, 80);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+ .card1 {
+  text-align: justify;
+  margin-top: 60px;
+      background:#88aacb;
+      color:  #00135b;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 6px solid #00135b;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 0.7s ease forwards;
+    }
+
+    .card1 h2 {
+      margin-top: 0;
+      color: navajowhite;
+    }
+
+    .card1 ul {
+      padding-left: 20px;
+    }
+
+    .card1 a {
+      color:navy;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card1 a:hover {
+      text-decoration: underline;
+    }
+.about-head {
+  color:rgb(35, 35, 171);
+  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: slideFadeIn 1.2s ease-out forwards;
+}
+
+/* Entrance animation */
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Hover Glow Effect */
+.about-head:hover {
+  color:navajowhite; /* Brighter red */
+   text-shadow: 0 0 8px skyblue;
+  transition: all 0.3s ease-in-out;
+}
+.about-text{
+    color: #00135b;
+}
+.welcome-card {
+  display: flex;
+  width: 100%;
+
+  /* max-width: 1200px; */
+  color:  #00135b;
+  margin: 0 auto;
+  background-color:skyblue !important;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+
+}
+
+.welcome-left,
+.welcome-right {
+  width: 50%;
+  display: flex;
+  align-items: center;  /* 👈 vertically center content */
+  justify-content: center;
+}
+
+.welcome-img {
+   width: 100%;
+  height: 500px; /* 👈 You can adjust this value */
+  object-fit: cover;
+  display: block;
+}
+
+.welcome-right {
+   padding: 30px;
+  background-color:skyblue;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.welcome-right p{
+  text-align: justify;
+}
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 28px;
+      }
+      .card {
+        padding: 20px;
+      }
+     .welcome-card {
+    flex-direction: column;
+  }
+
+  .welcome-left,
+  .welcome-right {
+    width: 100%;
+  }
+
+  .welcome-img {
+    height: auto;
+  }
+
+  .welcome-right {
+    text-align: center;
+  }
+
+    }
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  color: navy; /* Adjust based on navbar background */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  animation: nameFadeSlide 1.2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes nameFadeSlide {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Optional hover glow */
+.name:hover {
+  text-shadow: 0 0 8px skyblue;
+  transition: all 0.3s ease-in-out;
+}
